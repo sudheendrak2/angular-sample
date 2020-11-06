@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+   <ion-app>
+       <ion-header>
+           <ion-toolbar color="danger">
+               <ion-title> Ion!!!!!! </ion-title>
+           </ion-toolbar>
+       </ion-header>    
+       <ion-content>
+           <ion-grid>
+               <ion-row>
+                   <ion-col size-md="6" offset-md="3">
+                    <ion-card>
+                        <ion-card-content>
+                            <ion-header>
+                                <ion-title>Card Frame</ion-title>
+                            </ion-header>
+                            <ion-item>
+                             <ion-label position="floating">Enter a number</ion-label>
+                             <ion-input type=" number" id="txt1"></ion-input>
+                           </ion-item>
+                        </ion-card-content>
+                        <div text-right>
+                        <ion-button color="warning" fill="outline" id="btn1"> <ion-icon slot="start" name="close-outline"></ion-icon>Clear</ion-button>
+                        <ion-button color="success" fill="solid" id="btn2"><ion-icon slot="start" name="send-outline"></ion-icon>Submit </ion-button>
+                    </div>
+                    </ion-card>
+                   </ion-col>
+               </ion-row>
+           </ion-grid>
+           
+        <ion-item>
+            <ion-label position="floating">Floating label example</ion-label>
+            <ion-input type="text" id="txt2"></ion-input>
+            <ion-button>Default</ion-button>
+
+          </ion-item>
+          <ion-button color="primary">Primary</ion-button>
+          <ion-button color="secondary" expand="full">Secondary</ion-button>
+          <ion-button color="tertiary">Tertiary</ion-button>
+          <ion-button color="success" size="large">Success</ion-button>
+          <ion-button color="warning">Warning <ion-icon slot="end" name="star"></ion-icon></ion-button>
+          <ion-button color="danger" size="small">Danger <ion-icon slot="start" name="star"></ion-icon></ion-button>
+          <ion-button color="light" expand="full" fill="outline">Light</ion-button>
+          <ion-button color="medium" expand="block" fill="outline">Medium</ion-button>
+          <ion-button color="dark" shape="round" fill="outline">Dark</ion-button> 
+       </ion-content>   
+
+   </ion-app>
+ <script src="app.js"></script>
+</body>
+</html>
